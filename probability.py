@@ -30,3 +30,15 @@ def exp_probability_2(prf_a,pos_a,trials):
     return(exp)
 
 exp_probability_2(1,4,20)
+
+#expected values
+#there are three possible outcomes
+#hit a - 10 points (probability .5)
+#hit b - 20 points (probability .4)
+#hit c - 100 points (probability .1)
+# E(X) = P(A)*A + P(B)*B + P(C)*C
+
+def expected_value(ap,av,bp,bv,cp,cv):
+    return((ap*av)+(bp*bv)+(cp*cv))
+
+expected_value(.5,10,.4,20,.1,100)
